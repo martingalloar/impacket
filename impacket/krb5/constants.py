@@ -169,9 +169,23 @@ class AuthorizationDataType(Enum):
     #Reserved values                   = 10-63
     OSF_DCE                            = 64
     SESAME                             = 65
-    AD_OSF_DCE_PKI_CERTID              = 66 
-    AD_WIN2K_PAC                       = 128 
-    AD_ETYPE_NEGOTIATION               = 129 
+    AD_OSF_DCE_PKI_CERTID              = 66
+    AD_AUTHENTICATION_STRENGTH         = 70  # RFC 6113
+    AD_FX_FAST_ARMOR                   = 71  # RFC 6113
+    AD_FX_FAST_USED                    = 72  # RFC 6113
+    AD_LOGIN_ALIAS                     = 80  # RFC 6806
+    AD_CAMMAC                          = 96  # RFC 7751
+    AD_AUTHENTICATION_INDICATOR        = 97  # RFC 8129
+    AD_WIN2K_PAC                       = 128
+    AD_ETYPE_NEGOTIATION               = 129
+    AD_TOKEN_RESTRICTIONS              = 141  # MS-KILE
+    AD_LOCAL                           = 142  # MS-KILE
+    AD_AP_OPTIONS                      = 143  # MS-KILE
+    AD_TARGET_PRINCIPAL                = 144  # MS-KILE
+    AD_IMPLEMENTATION_SPECIFIC_145     = 145  # MS-KILE; data format unspecified
+    AD_SIGNTICKET_OLDER                = -17
+    AD_SIGNTICKET                      = 512
+    AD_PFS                             = 513
 
 # 7.5.5.  Transited Encoding Types
 class TransitedEncodingTypes(Enum):
